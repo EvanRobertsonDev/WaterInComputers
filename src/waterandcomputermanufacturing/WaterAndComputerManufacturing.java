@@ -25,6 +25,8 @@ public class WaterAndComputerManufacturing {
         int monitors;
         double combo;
         double total;
+        final int computerWater = 1;
+        final double monitorWater = 0.5;
         
         //Inputs
         System.out.println("How many computer systems to you own?");
@@ -33,7 +35,7 @@ public class WaterAndComputerManufacturing {
         monitors = keyedInput.nextInt();
         
         //Calculations
-        combo = computers*1 + monitors*0.5;
+        combo = computers*computerWater + monitors*monitorWater;
         total = combo;
         
         //Execution
